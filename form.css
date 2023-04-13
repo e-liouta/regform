@@ -1,0 +1,51 @@
+
+body {
+  background-color: #d1eff7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+
+label[for="name"], label[for="surname"], label[for="gender"], label[for="password"], label[for="passwordConfirmation"]{
+  display: block;
+  color: #153f85;
+  font-weight: bold;
+}
+
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 20px;
+  width: 450px;
+
+  background-color: #a2deed;
+
+  border-width: 0px;
+  border-radius: 25px;
+
+}
+
+legend {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #153f85;
+}
+
+.buttons {
+  display: flex;
+}
+
+
+input{
+  margin-bottom: 25px;
+  margin-left: 10px;
+  border-width: 0px 0px 2px 0px;
+  background-color: #a2deed;
+}
