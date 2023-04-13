@@ -1,6 +1,6 @@
 
 body {
-  background-color: #d1eff7;
+  background-color: #a7d7c5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,10 +10,19 @@ body {
 }
 
 
-label[for="name"], label[for="surname"], label[for="gender"], label[for="password"], label[for="passwordConfirmation"]{
-  display: block;
-  color: #153f85;
-  font-weight: bold;
+label[for="name"], label[for="surname"], label[for="password"], label[for="passwordConfirmation"]{
+  display: none;
+}
+
+label[for="gender"] {
+  display: inline;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  color: #32403b;
 }
 
 
@@ -21,31 +30,102 @@ fieldset{
   display: flex;
   flex-direction: column;
 
-  padding: 40px 20px;
+  padding: 40px 80px;
   width: 450px;
 
-  background-color: #a2deed;
-
+  border-radius: 50px;
+  background-color: #f6fbf9;
   border-width: 0px;
-  border-radius: 25px;
+
 
 }
 
 legend {
-  font-size: 25px;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
   text-align: center;
-  color: #153f85;
+  color: #212b27;
+  font-size: 40px;
 }
 
 .buttons {
   display: flex;
 }
 
+button {
+  flex-grow: 0;
+  margin: 20px 10px;
+  padding: 20px 100px;
+  border-radius: 15px;
+  border-width: 0px;
+  background-color: #84c7ae;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+button:hover{
+  background-color: #c2ebdc;
+  color: #84c7ae;
+}
+
+#male, #female {
+  accent-color: #84c7ae;
+}
+
+#name, #surname, #password, 
+
 
 input{
-  margin-bottom: 25px;
-  margin-left: 10px;
-  border-width: 0px 0px 2px 0px;
-  background-color: #a2deed;
+  border-radius: 5px;
+  border: solid 1.5px rgba(0, 0, 0, 0.1);
+  margin: 20px 10px;
+  padding: 20px 100px 20px 10px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  fieldset {
+    width: 90%;
+    padding: 40px;
+  }
+  
+  button {
+    padding: 10px 50px;
+    font-size: 16px;
+  }
+  
+  input {
+    padding: 10px 50px 10px 10px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  fieldset {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  legend {
+    font-size: 30px;
+  }
+  
+  button {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  
+  input {
+    padding: 10px 30px 10px 10px;
+    font-size: 14px;
+  }
 }
