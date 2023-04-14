@@ -20,9 +20,6 @@ function isValidPassword(password) {
     return regex.test(password);
 }
       
-form.addEventListener('submit', (event) => {
-    let isValid = true;
+
         
-    // Check if name is not empty and contains only letters
-    if (nameInput.value.trim() === '') {
-        document.getElementById('name
+

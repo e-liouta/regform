@@ -16,13 +16,14 @@ label[for="name"], label[for="surname"], label[for="password"], label[for="passw
 
 label[for="gender"] {
   display: inline;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.3;
   letter-spacing: normal;
   color: #32403b;
+  padding-left: 10px;
 }
 
 
@@ -47,8 +48,11 @@ legend {
   line-height: 1.3;
   letter-spacing: normal;
   text-align: center;
-  color: #212b27;
-  font-size: 40px;
+  color: #fff;
+  font-size: 30px;
+  background-color: #84c7ae;
+  padding: 20px 60px;
+  border-radius: 15px;
 }
 
 .buttons {
@@ -81,7 +85,9 @@ button:hover{
   accent-color: #84c7ae;
 }
 
-#name, #surname, #password, 
+#name, #surname, #password, #passwordConfirmation {
+  width: 75%;
+}
 
 
 input{
@@ -90,6 +96,8 @@ input{
   margin: 20px 10px;
   padding: 20px 100px 20px 10px;
   background-color: #fff;
+  font-size: 14px;
+  color: #56a085;
 }
 
 @media only screen and (max-width: 768px) {
@@ -107,7 +115,8 @@ input{
     padding: 10px 50px 10px 10px;
     font-size: 16px;
   }
-}
+
+
 
 @media only screen and (max-width: 480px) {
   fieldset {
