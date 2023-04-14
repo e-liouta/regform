@@ -44,13 +44,13 @@
         
         <div class="confirmation">
           <label for="passwordConfirmation">Password Confirmation:</label>
-          <input type="password" id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirm your password" required>
+          <input type="password" id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirm your password" required onblur="check()">
           <div id="passwordConfirmationError" class="error"></div>
         </div>
       </div>
 
       <div class="buttons">
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="check()">Submit</button>
         <button type="reset">Reset</button>
       </div>
     </fieldset>

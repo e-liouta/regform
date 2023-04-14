@@ -107,6 +107,7 @@ button:hover{
 
 #name, #surname, #password, #passwordConfirmation {
   width: 75%;
+  font-size: 15px;
 }
 
 /* Styling show password checkbox input */
