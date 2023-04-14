@@ -1,12 +1,3 @@
-function myFunction() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-}
-
 const nameInput = document.getElementById('name');
 const surnameInput = document.getElementById('surname');
 const genderInput = document.getElementById('gender');
@@ -20,6 +11,11 @@ function isValidPassword(password) {
     return regex.test(password);
 }
       
-
-        
-
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
