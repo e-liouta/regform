@@ -7,21 +7,17 @@
   <form id="regForm">
     <fieldset>
       <legend>Registration Form</legend>
-      <div class="fullname">
         <div class="wrap-name">
           <label for="name">Name:</label>
           <div>
             <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[a-zA-Z]+" required title="*** Only characters are allowed">
-           <div id="nameError" class="error"></div>
+            <div id="nameError" class="error"></div>
           </div>
         </div>
-
-        <div class="wrap-surname">
-          <label for="surname">Surname:</label>
-          <div>
-            <input type="text" id="surname" name="surname" placeholder="Enter your surname" pattern="[a-zA-Z]+" required title="*** Only characters are allowed">
-            <div id="surnameError" class="error"></div>
-          </div>
+      <label for="surname">Surname:</label>
+        <div>
+          <input type="text" id="surname" name="surname" placeholder="Enter your surname" pattern="[a-zA-Z]+" required title="*** Only characters are allowed">
+          <div id="surnameError" class="error"></div>
         </div>
       </div>
 
@@ -33,22 +29,20 @@
         <label for="female">Female</label>
       </div>
       
-      <div class="pass">
-        <div class="password">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[!#%&])(?!.*\s).{8,10}$" required>
-          <input type="checkbox" id="showPassword" onclick="myFunction()">
-          <label for="showPassword">Show Password</label>
-          <div id="passwordError" class="error"></div>  
-        </div>
-        
-        <div class="confirmation">
-          <label for="passwordConfirmation">Password Confirmation:</label>
-          <input type="password" id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirm your password" required onblur="check()">
-          <div id="passwordConfirmationError" class="error"></div>
-        </div>
+      <div class="password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[!#%&])(?!.*\s).{8,10}$" required>
+        <input type="checkbox" id="showPassword" onclick="myFunction()">
+        <label for="showPassword">Show Password</label>
+        <div id="passwordError" class="error"></div>  
       </div>
-
+        
+      <div class="confirmation">
+        <label for="passwordConfirmation">Password Confirmation:</label>
+        <input type="password" id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirm your password" required onblur="check()">
+        <div id="passwordConfirmationError" class="error"></div>
+      </div>
+      
       <div class="buttons">
         <button type="submit" onclick="check()">Submit</button>
         <button type="reset">Reset</button>
