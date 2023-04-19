@@ -28,3 +28,6 @@ The JavaScript file includes two functions. One function shows the password in p
 ## Contributors
 This project was created by Effie Liouta.
 
+![image](https://user-images.githubusercontent.com/17378923/232049274-fcac162d-5988-4e2f-b635-35aab80ea3b9.png)
+
+
