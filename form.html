@@ -10,13 +10,13 @@
         <div class="wrap-name">
           <label for="name">Name:</label>
           <div>
-            <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[a-zA-Z]+" required title="*** Only characters are allowed">
+            <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[a-zA-Z]+" onkeypress="checknameifnum()" onblur="checknameifnum()" required title="*** Only characters are allowed">
             <div id="nameError" class="error"></div>
           </div>
         </div>
       <label for="surname">Surname:</label>
         <div>
-          <input type="text" id="surname" name="surname" placeholder="Enter your surname" pattern="[a-zA-Z]+" required title="*** Only characters are allowed">
+          <input type="text" id="surname" name="surname" placeholder="Enter your surname" pattern="[a-zA-Z]+" onkeypress="checksurnameifnum()" onblur="checksurnameifnum()" required title="*** Only characters are allowed">
           <div id="surnameError" class="error"></div>
         </div>
       </div>

@@ -145,6 +145,12 @@ input{
   color: #56a085;
 }
 
+.error {
+  font-size: 14px;
+  color: #e5771e;
+  padding-left: 10px;
+}
+
 /* responsive options */
 @media only screen and (max-width: 768px) {
   fieldset {
@@ -184,3 +190,5 @@ input{
     font-size: 14px;
   }
 }
+
+
